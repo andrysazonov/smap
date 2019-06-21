@@ -1,0 +1,22 @@
+.map {
+    position: relative;
+    text-align: center;
+
+}
+/* :root {
+    position:absolute;
+} */
+svg{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.place{
+    fill:red;
+    opacity: 0;
+}
+.place:hover{
+    transition: opacity .5s ease;
+    opacity: 0.6;
+}
