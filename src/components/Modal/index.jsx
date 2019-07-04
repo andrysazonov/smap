@@ -6,12 +6,10 @@ import './style.css'
 export default class Modal extends React.Component {
     constructor(props) {
         super(props);
-        this.isOpen = props.isOpen;
+        this.isOpen = this.props.isOpen;
         console.log(props)
         // { title, isOpen, onCancel, onSubmit, children }
-        // this.state={
-        //     isOpen:this.isOpen
-        // };
+        
 
     }
     
@@ -27,7 +25,7 @@ export default class Modal extends React.Component {
     static defaultProps = {
         // title: 'Modal title',
         isOpen: false,
-        // onCancel: () => { },
+        // onClose: () => { },
         // onSubmit: () => { },
         // children: null,
     }
@@ -39,23 +37,23 @@ export default class Modal extends React.Component {
     render() {
         return (
             <>
-                {console.log(this.props)}
-                {console.log('1',this.isOpen)}
-                {this.isOpen &&
+                {/* {console.log(this.isOpen)} */}
+                {/* {console.log('1',this.state)} */}
+                {this.props.isOpen &&
                     <Portal>
                         <div className='modalOverlay'>
                             <div className='modalWindow'>
                                 <div className='modalHeader'>
-                                    <button type="button" className="close" onClick={this.onClose} aria-label="Close">
+                                    <button type="button" className="close" onClick={this.props.onClose} aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                     <div className="modalTitle">{this.title}</div>
                                 </div>
                                 <div className='modalBody'>
-                                    QQQQQQQQQQ
+                                    Information About employee
                         </div>
                                 <div className='modalFooter'>
-                                    QQQQQQQQQQ
+                                    Also information
                         </div>
                             </div>
                         </div>

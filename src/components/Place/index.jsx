@@ -17,10 +17,16 @@ export default class Place extends React.Component {
         "m 275.16698,292.19657 39.01999,0.50675 0.76013,24.07078 -39.27337,-0.50676 z"
     ]
 
-    handleClick = (list) => {
+    handleClick = () => {
         this.setState({ isOpen: true });
-        list.push(<Modal key={list.length+1} isOpen={this.state.isOpen}/>)
+
         console.log('tick');
+
+    }
+    handleCancel = () => {
+        this.setState({ isOpen: false });
+
+        console.log('pick');
 
     }
 
@@ -33,7 +39,7 @@ export default class Place extends React.Component {
                 </path>
             )
         })
-        
+        list.push(<Modal key={list.length+1} isOpen={this.state.isOpen} onClose={this.handleCancel}/>)
         return list
 
 

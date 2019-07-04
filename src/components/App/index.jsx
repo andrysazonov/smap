@@ -7,7 +7,7 @@ export default class App extends React.Component {
         return (
             <Fragment>
                 <Place />
-                
+
             </Fragment>
 
 
