@@ -1,12 +1,13 @@
-/* body {
-    margin: 30px;
-} */
+body {
+    margin: 20px;
+}
 
 .karta {
+    top: 40px;
     margin: 0 0 50px;
-    border: 3px solid royalblue;
+    border: 3px solid rgb(101, 101, 112);
     max-width: 100%;
-    height:90vh;
+    height: 90vh;
     position: relative;
     /* width: 3827px; 
      height: 859px; */
@@ -16,52 +17,50 @@
 }
 
 #minus {
-    left:5px;
+    color:white;
+    left: 5px;
     z-index: 1000;
-    width:40px;
+    width: 40px;
     height: 40px;
     top: 50px;
-}
-
-.btn btn-success {
+    background: rgb(101, 101, 112);
+    opacity: 0.8;
     position: absolute;
-    right: 20px;
+    font-weight: bold;
+    border-radius: 50%;
 }
 
-button {
-    
+#plus {
+    color:white;
     border-radius: 50%;
     z-index: 1000;
     position: absolute;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 28px;
     width: 50px;
     height: 50px;
-    background: rgb(52, 64, 236);
-    opacity: 0.6;
+    background: rgb(101, 101, 112);
+    opacity: 0.8;
 }
 
-/*  
 .map {
-    
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin: 100px;
-    padding: 50px;
-    position: relative;
-    text-align: center;
-} */
+    width: 75%;
+    height: 75%;
+}
+
+.dropdown {
+    left: 60px;
+}
 
 /* width=3827 height=863 */
 
-/* img {
-    width: 100%;
-    height: 100%;
-} */
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 svg {
     position: absolute;

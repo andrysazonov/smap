@@ -1,5 +1,6 @@
 import React from 'react'
 import Modal from '../Modal/index';
+// import { placeholder } from '@babel/types';
 
 
 export default class Place extends React.Component {
@@ -19,13 +20,13 @@ export default class Place extends React.Component {
 
     handleClick = () => {
         this.setState({ isOpen: true });
-
+        
         console.log('tick');
 
     }
-    handleCancel = () => {
+    handleCancel = (e) => {
         this.setState({ isOpen: false });
-
+        
         console.log('pick');
 
     }
@@ -39,6 +40,7 @@ export default class Place extends React.Component {
                 </path>
             )
         })
+        
         list.push(<Modal key={list.length+1} isOpen={this.state.isOpen} onClose={this.handleCancel}/>)
         return list
 

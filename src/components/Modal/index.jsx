@@ -7,7 +7,7 @@ export default class Modal extends React.Component {
     constructor(props) {
         super(props);
         this.isOpen = this.props.isOpen;
-        console.log(props)
+        // console.log(props)
         // { title, isOpen, onCancel, onSubmit, children }
         
 
@@ -42,7 +42,7 @@ export default class Modal extends React.Component {
                 {this.props.isOpen &&
                     <Portal>
                         <div className='modalOverlay'>
-                            <div className='modalWindow'>
+                            <div className='modalWindow' >
                                 <div className='modalHeader'>
                                     <button type="button" className="close" onClick={this.props.onClose} aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
