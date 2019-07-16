@@ -24,11 +24,10 @@ export default class Place extends React.Component {
         console.log('tick');
 
     }
-    handleCancel = (e) => {
+    handleCancel = () => {
         this.setState({ isOpen: false });
-        
+    
         console.log('pick');
-
     }
 
     render() {
