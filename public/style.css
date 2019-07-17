@@ -73,6 +73,7 @@ svg {
     position: absolute;
     fill: red;
     opacity: 0;
+    cursor: pointer;
 }
 
 .place:hover {
